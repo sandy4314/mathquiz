@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    background:linear-gradient(135deg,red,blue,violet);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+.form{
+    
+    background-color:rgb(10, 227, 216);
+    margin:20px;
+    padding: 20px;
+    padding-bottom: -20px;
+    box-shadow: 0 4px 12px;
+    border-radius: 10px;
+    height: 300px;
+    width:400px;
+    position: fixed;
+    
+}
+.input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:10px;
+    font-size: 20px;
+}
+.input::placeholder{
+    color:lightblue;
+}
+button{
+    width:30%;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(9, 242, 9);
+    border-radius: 10px;
+    color:white;
+    padding:5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#operation{
+    color:#E4F308;
+}
+h1{
+animation-name: slideLeft;
+animation-duration: 2s;
+animation-timing-function: cubic-bezier(0.42, 0, 0.69, 1.41);
+animation-iteration-count: 1;
+}
+@keyframes slideLeft {
+    from{transform: translateX(300%);}
+}
+h2.animate{
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.69, 1.41);
+    animation-iteration-count: 1;
+    outline:none;
+    animation-direction: normal;
+}
+    @keyframes slideLeft {
+        from{transform: translateX(300%)}
+    }
+
+
+h4.animate{
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.69, 1.41);
+    animation-iteration-count: 1;
+    outline:none;
+    animation-direction:normal;
+}
+    @keyframes fade {
+        from{transform: scale(2,2)}
+    }
+button:hover{
+    background-color: lightgreen;
+}
